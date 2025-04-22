@@ -2,17 +2,6 @@
 
 This project implements a multimodal sarcasm detection system that leverages both text and emoji features to classify social media comments as sarcastic or not sarcastic. The repository includes data preprocessing, traditional machine learning, BERT-based, and multimodal deep learning approaches.
 
-## Setup
-
-1. **Clone the repository**.
-2. **Install dependencies** (Python 3.7+ recommended):
-
-   ```
-   pip install torch transformers pandas numpy scikit-learn emoji gensim matplotlib
-   ```
-
-3. **Ensure `emoji2vec.bin`** is present in the directory (required for the multimodal model).
-
 ## Workflow
 
 ### 1. Data Preprocessing
@@ -71,8 +60,3 @@ python multimodal.py
 - `utils.py`: Utility functions for model training and evaluation.
 - `emoji2vec.bin`: Pre-trained emoji embeddings.
 - `combined_sarcasm_dataset.csv`: Output dataset for model training/testing.
-
-## Notes
-
-- All scripts and data files are assumed to be in the same directory for ease of use.
-- For best performance, run BERT and multimodal models on a machine with GPU support.
